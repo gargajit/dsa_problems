@@ -1,4 +1,5 @@
-# Given an integer array A of size N. You can remove any element from the array in one operation.
+# Given an integer array A of size N. 
+# You can remove any element from the array in one operation.
 
 class Solution:
     # @param A : list of integers
