@@ -2,8 +2,6 @@
 # You can remove any element from the array in one operation.
 
 class Solution:
-    # @param A : list of integers
-    # @return an integer
     def solve(self, A):
         N = len(A)
         A.sort()
