@@ -4,7 +4,7 @@
 class Solution:
     def solve(self, A):
         N = len(A)
-        A.sort()
+        A.sort()        // sort the array
         k = 1
         ans = 0
 
