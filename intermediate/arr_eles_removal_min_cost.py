@@ -11,6 +11,5 @@ class Solution:
         for i in range(N-1, -1, -1):
             ans += A[i] * k
             k += 1
-        
+            
         return ans
-
