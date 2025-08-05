@@ -8,7 +8,7 @@ class Solution:
         k = 1
         ans = 0
 
-        for i in range(N-1, -1, -1):
+        for i in range(N-1, -1, -1):        // removing bigger value first to reduce cost
             ans += A[i] * k
             k += 1
             
