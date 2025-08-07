@@ -6,7 +6,7 @@ class Solution:
         N = len(A)
         A.sort()        // sort the array
         k = 1
-        ans = 0
+        ans = 0           // stores answer
 
         for i in range(N-1, -1, -1):        // removing bigger value first to reduce cost
             ans += A[i] * k
