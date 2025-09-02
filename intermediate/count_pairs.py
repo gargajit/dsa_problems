@@ -1,25 +1,21 @@
-# Given an array A and an integer B. 
-# A pair(i, j) in the array is a good pair if i != j and (A[i] + A[j] == B). 
-# Check if any good pair exist or not.
-# Return 1 if good pair exist otherwise return 0.
+# Count the pairs of (i,j), such that
+# i < j, s[i] = 'a', s[j] = 'g'
+
+# Brute force
+def countAGPairs(s):
+  N = len(s)
+  count = 0
+
+  for i in range(N-1):
+    if s[i] == 'a':
+      for j in range(i+1, N):
+        if s[j] == 'g':
+          count += 1
+  return count
 
 def main():
-  A = [1,2,3,4]
-  B = 7
-  check_good_pair(A, B)
-
-
-def check_good_pair(A, B):
-  good_pair = set()
+  S = "abegag"
+  print(countAGPairs(S))
   
-  for item in A:
-      if B - item in good_pair:
-          return 1
-      else:
-          good_pair.add(item)
-      
-  return 0
-
-
 if __name__ == "__main__":
   main()
